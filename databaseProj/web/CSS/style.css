@@ -1,0 +1,130 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 8, 2024, 4:45:49 PM
+    Author     : Xander
+*/
+
+html, body {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+    background-color: #f1f1f1;
+}
+form {
+    margin: 50px 0 0 0;
+    border: 5px solid #f1f1f1;
+    background-color: white;
+}
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.icon {
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    color: #4286f4;
+}
+button {
+    background-color: #4286f4;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: grab;
+    width: 48%;
+}
+h1 {
+    text-align:center;
+    fone-size:18;
+}
+button:hover {
+    opacity: 0.8;
+}
+.formcontainer {
+    text-align: center;
+    margin: 24px 50px 12px;
+}
+.container {
+    padding: 16px 0;
+    text-align:left;
+}
+span.psw {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+}
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+    
+.greetings{
+    text-align: center;
+    font-size:70px;
+    position: absolute;
+    font-weight: 1000;
+}
+
+
+.col{
+    width: 28%;
+    height: 40vh;
+    float: left;
+    margin: 200px 0 0 10px;
+    padding: 50px;
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 30px;
+
+    padding: 20px; /* Add padding for better layout */
+    border: 1px solid #ccc; /* Optional border for visual separation */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+    
+          position: relative;
+      left: 5%;
+
+}
+
+
+/* Hover effect: change background color */
+.col:hover {
+    background-color: #f0f0f0; /* Change to a light gray on hover */
+    cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+}
+
+p{
+    font-size: 20px; /* Large font size */
+
+}
+
+.centerSpan{
+    text-align: center;
+    font-weight:bold;
+    font-family: sans-serif;
+    background-color:  #f1f1f1f1;
+    padding: 20px;
+    margin: 0 0 10px 0;
+}
+
+.paragraphFirstColumn{
+    font-size: 40px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    text-decoration: none;
+    font-family: Helvterica;
+}
+
