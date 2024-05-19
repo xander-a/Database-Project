@@ -46,7 +46,7 @@ public class form extends HttpServlet {
             throws ServletException, IOException {
         doGet(request, response); // Redirecting POST requests to GET can cause unintended behavior
     }
-
+    
     private void viewForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         formDao dao = new formDao();
@@ -57,11 +57,12 @@ public class form extends HttpServlet {
         formModel user = (formModel) session.getAttribute("form");
 
         request.setAttribute("formList", formList);
-        request.setAttribute("username", user != null ? user.getusername() : "Guest"); // Set default if null
+       request.setAttribute("username", user != null ? user.getusername() : "Guest"); // Set default if null                    
 
         RequestDispatcher rd = request.getRequestDispatcher("/home.jsp");
         rd.forward(request, response);
     }
+    
 
     private void showFormCreateForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -78,6 +79,8 @@ private void createForm(HttpServletRequest request, HttpServletResponse response
 
     try {
         username = request.getParameter("username");
+        request.setAttribute("email", email); // Attribute name corrected
+        request.setAttribute("password", password); // Attribute name corrected
 
         formDao dao = new formDao();
         formModel newForm = new formModel(username, email, password);
@@ -102,14 +105,28 @@ private void createForm(HttpServletRequest request, HttpServletResponse response
 private void showFormUpdateForm(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
     String username = request.getParameter("username");
-    formDao dao = new formDao();
-    formModel formDetails = dao.getFormDetails(username);
+    String email = request.getParameter("email");
+    String password = request.getParameter("password");
+    String message = ""; // Initialize the message
 
-    request.setAttribute("formDetails", formDetails); // Pass formDetails to the JSP page
+    if (username != null && !username.isEmpty()) {
+        // Username passed successfully
+        message = "Username passed: " + username;
+    } else {
+        // Username not passed or is empty
+        message = "No username passed or empty.";
+    }
 
-    RequestDispatcher rd = request.getRequestDispatcher("/formProjUpdate.jsp"); // Forward to the JSP page
+    // Set individual attributes in the request scope
+    request.setAttribute("username", username);
+    request.setAttribute("email", email);
+    request.setAttribute("password", password);
+    request.setAttribute("message", message);
+
+    RequestDispatcher rd = request.getRequestDispatcher("/formProjUpdate.jsp");
     rd.forward(request, response);
 }
+
 
 
 private void updateForm(HttpServletRequest request, HttpServletResponse response)
@@ -129,6 +146,8 @@ private void updateForm(HttpServletRequest request, HttpServletResponse response
     }
     
     request.setAttribute("username", username); // Attribute name corrected
+    request.setAttribute("email", email); // Attribute name corrected
+    request.setAttribute("password", password); // Attribute name corrected
     String message;
     if (success) {
         message = "Form for user " + username + " has been updated."; // Message corrected
@@ -140,7 +159,5 @@ private void updateForm(HttpServletRequest request, HttpServletResponse response
     RequestDispatcher rd = request.getRequestDispatcher("/home"); // getRequestDispatcher method corrected
     rd.forward(request, response); 
 }
-
-
 }
 

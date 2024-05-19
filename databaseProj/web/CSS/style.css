@@ -126,5 +126,83 @@ p{
     text-align: center;
     text-decoration: none;
     font-family: Helvterica;
+    color: black;
 }
 
+.accountInformation{
+    width: 300px;
+    height: 40vh;
+    border: 1px solid #f1f1f1;
+    padding: 50px;
+    background-color: white;
+    margin: 100px 0 0 10px;
+    border-radius: 30px;    
+}
+
+.icon{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 9999; /* Ensure the modal is on top of other elements */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Center the modal vertically and horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; /* Max width of the modal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.modal-body .info {
+    margin-bottom: 15px;
+}
+
+.modal-body .info strong {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.modal-body .info p {
+    margin: 0;
+}
+
+.underline {
+    text-decoration: underline;
+}
