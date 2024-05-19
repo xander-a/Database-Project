@@ -22,10 +22,11 @@
       </div>
       <div class="formcontainer">
       <div class="container">
-        <label for="username"><strong>Username</strong></label>
-        <input type="text" placeholder="Enter Username" name="username" id="username" required>
+<label for="username"><strong>Username</strong></label>
+<input type="text" placeholder="Enter Username" name="username" id="username" pattern="[a-zA-Z0-9]+" title="Username must be alphanumeric" required>
+
         <label for="email"><strong>E-mail</strong></label>
-        <input type="text" placeholder="Enter E-mail" name="email" id="email" required>
+        <input type="email" placeholder="Enter E-mail" name="email" id="email" required>
         <label for="password"><strong>Password</strong></label>
         <input type="password" placeholder="Enter Password" name="password" id="password" required>
       </div>
@@ -37,5 +38,7 @@
         <span class="psw"><a href="#">Forgot password?</a></span>
       </div>
     </form>
+    
+    
   </body>
 </html>

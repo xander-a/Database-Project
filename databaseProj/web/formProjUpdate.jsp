@@ -28,10 +28,10 @@
     <label for="username"><strong>Username</strong></label>
     <input type="text" placeholder="Enter Username" name="username" id="username" value="<c:out value='${username}'/>" required>
     <label for="email"><strong>E-mail</strong></label>      
-    <input type="text" placeholder="Enter E-mail" name="email" id="email" value="<c:out value='${email}'/>" required>
+    <input type="email" placeholder="Enter E-mail" name="email" id="email" value="<c:out value='${email}'/>" required>
            
     <label for="password"><strong>Password</strong></label>
-    <input type="text" placeholder="Enter Password" name="password" id="password" value="<c:out value='${password}'/>"  required>
+    <input type="password" placeholder="Enter Password" name="password" id="password" value="<c:out value='${password}'/>"  required>
 </div>
 
       <button type="submit"><strong>SAVE CHANGES</strong></button>
