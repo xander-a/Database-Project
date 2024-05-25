@@ -4,7 +4,8 @@
 ![image](https://github.com/xander-a/Database-Project/assets/117904036/f8b9c22c-5e72-4c08-9e20-031ef3ed3c29)
 
 <h1>Going into My Account</h1>
-![image](https://github.com/xander-a/Database-Project/assets/117904036/c131ece3-d0f4-4b9e-b97c-a57f8b9e272c)
+![image](https://github.com/xander-a/Database-Project/assets/117904036/d0b56d02-d88a-4858-adf5-dc11b2c1948a)
+
 
 <h1>Going into edit form. You can only edit password and email of existing account.</h1>
 ![image](https://github.com/xander-a/Database-Project/assets/117904036/2c00e42b-636e-4560-8a61-53e60a9cfa74)
