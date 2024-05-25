@@ -10,7 +10,7 @@ Going into My Account
 
 
 Going into edit form. You can only edit password and email of existing account.
-![image](https://github.com/xander-a/Database-Project/assets/117904036/2c00e42b-636e-4560-8a61-53e60a9cfa74)
+![image](https://github.com/xander-a/Database-Project/assets/117904036/62cc0c0f-9995-4e96-ba98-29d2c7210752)
 ![image](https://github.com/xander-a/Database-Project/assets/117904036/01dbf87c-1c0d-439d-81a5-aaab13cea999)
 ![image](https://github.com/xander-a/Database-Project/assets/117904036/aa14bae1-e9da-497c-9b96-5f5b27c7e811)
 
